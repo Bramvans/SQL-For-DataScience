@@ -1,0 +1,53 @@
+## 1 
+Select
+Composer, TrackId
+From Tracks
+WHERE TrackId=18
+
+## 3 
+Select
+SUM(Total), BillingAddress, CustomerId 
+From Invoices
+WHERE CustomerId=31
+
+## 4 
+Select COUNT(Playlistid),
+From Playlists
+
+## 5
+Select CustomerId,
+InvoiceDate, 
+BillingCity 
+From Invoices
+WHERE CustomerId=42
+
+Select CustomerId,
+InvoiceDate, 
+BillingCity 
+From Invoices
+WHERE BillingCity="Santiago"
+
+##6 
+Select FirstName, 
+LastName, 
+Email, 
+Phone
+From Customers
+WHERE Firstname="Jennifer"
+AND Lastname="Peterson"
+
+## 7
+Select
+SUM(UnitPrice)
+From Tracks;
+
+## 10
+Select *
+From Albums
+Limit 5;
+
+Select *
+From Albums
+Where AlbumId=9;
+
+
