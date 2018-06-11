@@ -1,0 +1,31 @@
+Excercise 1
+
+select Firstname, Lastname, Address
+From Employees
+Where Firstname = "Robert"
+And Lastname ="King"
+
+Excercise 2
+
+Select Firstname, Birthdate
+From Employees
+Where Birthdate <= "1965-03-03"
+
+Excercise 3
+
+Select Firstname, Birthdate
+From Employees
+Where Birthdate = "1965-03-03 00:00:00"
+
+Excercise 4
+
+Select *
+From Tracks
+Limit 20
+
+of
+
+Select *
+From Tracks
+Where TrackId = 5
+
