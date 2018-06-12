@@ -1,0 +1,28 @@
+1##
+
+SELECT
+COUNT (TrackId) As "number of tracks"
+FROM Tracks
+WHERE Milliseconds >= 5000000
+
+2##
+
+SELECT COUNT(InvoiceId) AS "Number of Invoices"
+FROM Invoices
+WHERE Total BETWEEN "5.00" AND "15.00"
+
+3##
+
+
+
+4##
+
+5##
+
+6##
+
+7##
+
+8##
+
+9##
