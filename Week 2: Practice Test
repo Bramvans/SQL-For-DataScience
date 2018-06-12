@@ -1,0 +1,73 @@
+2 ##
+
+SELECT 
+DISTINCT Extended_Step AS dist_Extended_Step
+FROM salary_range_by_job_classification
+
+3 ##
+
+Select
+min(Biweekly_high_Rate)
+From salary_range_by_job_classification
+WHERE Biweekly_high_Rate <> "$0.00"
+
+4 ##
+
+Select
+Max(Biweekly_high_Rate)
+FROM salary_range_by_job_classification
+
+5 ##
+
+Select
+job_code,
+pay_type
+FROM salary_range_by_job_classification
+WHERE job_code LIKE "03%"
+
+6 ##
+
+Select
+grade,
+eff_date,
+sal_end_date
+FROM salary_range_by_job_classification
+WHERE grade = "Q90H0"
+
+7 ##
+
+Select
+Biweekly_low_Rate
+FROM salary_range_by_job_classification
+ORDER BY Biweekly_low_Rate ASC
+
+8 ## 
+
+Select
+Job_Code,
+Step
+FROM salary_range_by_job_classification
+WHERE Job_Code BETWEEN "0110" AND "0400"
+ORDER BY Job_Code ASC
+
+9 ##
+
+Select
+(Biweekly_High_Rate - Biweekly_Low_Rate) AS Anwser
+FROM salary_range_by_job_classification
+WHERE Job_Code = "0170"
+
+10 ##
+Not working
+
+11 ##
+
+Select
+SetID,
+Step,
+Union_Code
+FROM salary_range_by_job_classification
+WHERE Union_Code = "990" AND (SetID = "COMMN" OR SetID = "SFMTA")
+
+
+
