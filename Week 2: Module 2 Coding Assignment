@@ -12,17 +12,52 @@ FROM Invoices
 WHERE Total BETWEEN "5.00" AND "15.00"
 
 3##
-
-
+SELECT
+state,
+FirstName,
+LastName,
+Company
+FROM Customers
+Where FirstName = "Jack" AND LastName = "Smith"
 
 4##
+SELECT 
+InvoiceId,
+CustomerId,
+Total,
+InvoiceDate
+FROM Invoices
+Where InvoiceId = 315
 
 5##
+Select 
+TrackId,
+Name
+From Tracks
+Where Name like "All%"
 
 6##
+select 
+Email
+From Customers
+Where Email LIKE "J%" AND Email LIKE "%gmail.com"
 
 7##
+Select 
+Total,
+BillingCity,
+InvoiceId
+From Invoices
+Where BillingCity IN ("Brasilia","Edmonton","Vancouver")
+ORDER BY InvoiceId DESC
 
 8##
+SELECT
+DISTINCT InvoiceId AS "Aantal",
+SUM(Total) as "Totaal",
+CustomerId
+FROM Invoices
+GROUP BY CustomerId
+Order BY Aantal DESC
 
 9##
